@@ -15,7 +15,7 @@
 #include <avr/interrupt.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "C:\Users\Fatima\Documents\4to año\1er ciclo\Digital2\Lab 3\Lab 3\SPI\SPI.h"
+#include "C:\Users\Fatima\Documents\4to aÃ±o\1er ciclo\Digital2\Lab 3\Lab 3\SPI\SPI.h"
 
 #define BUFFER_SIZE 4 
 
@@ -84,7 +84,7 @@ int main(void)
 		
 		//spiWrite((char) resultado);
 		PORTD = (PORTD & 0b00000011) | ((resultado & 0b00111111) << 2); // Enviar los primeros 6 bits a PORTD (PD2 a PD7)
-		PORTC = (PORTC & 0b11111100) | ((resultado & 0b11000000) >> 6); // Enviar los últimos 2 bits a PORTB (PB0 y PB1)
+		PORTC = (PORTC & 0b11111100) | ((resultado & 0b11000000) >> 6); // Enviar los Ãºltimos 2 bits a PORTB (PB0 y PB1)
 		
 		
 		_delay_ms(400);
